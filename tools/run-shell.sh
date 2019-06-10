@@ -7,6 +7,6 @@
 clear
 
 echo "=================="
-echo "Opening iPython with cliapp pre-loaded..."
+echo "Opening iPython with pypapers pre-loaded..."
 echo "=================="
 ipython ./profile.py --no-simple-prompt --no-confirm-exit -i

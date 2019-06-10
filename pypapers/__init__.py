@@ -2,4 +2,4 @@
 # -*- coding: utf-8 -*-
 
 # make class available to global scope
-from cliapp.mymodule import MyClass
+from pypapers.mymodule import MyClass

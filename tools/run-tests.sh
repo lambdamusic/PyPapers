@@ -11,7 +11,7 @@ echo "=================="
 echo "CALLING [test_one] in 1 second..."
 echo "=================="
 sleep 1
-python -m cliapp.tests.test_one
+python -m pypapers.tests.test_one
 sleep 2
 
 clear 

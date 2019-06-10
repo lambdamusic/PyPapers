@@ -1,4 +1,4 @@
 # startup file for ipython
 # $ ipython profile.py -i
 
-from cliapp import *
+from pypapers import *

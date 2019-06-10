@@ -9,7 +9,7 @@ from .mymodule import MyClass
 
 
 CMD_LINE_EXAMPLES = """SOME EXAMPLES HERE:
-$ cliapp
+$ pypapers
  => returns some nice text
 """
 

@@ -1,16 +1,16 @@
-# Python CLI  structure
+# PyPapers
 
 ## Why?
 
-This repo serves as a good reference point for a simple and basic CLI
-structure. This can either be consumed visually or cloned in which case you
-should change `cliapp` to whatever your CLI name will be.
+I've tried many of them and finally got fed up with [reference managements systems](https://en.wikipedia.org/wiki/Comparison_of_reference_management_software). Either too bloated with features, or lacking simplicity.
+
+Let's try to do this the simple way: 
+* all PDFs in one folder (or so) 
+* a command line tool to search them 
+* rely on OSx excellent `mdfind` library for searching 
+* rely on excellent Preview app for reading/editing 
 
 
-### Install
+## Install
 
-```
-$ mkvirtualenv myproject
-$ pip install --editable .
-# https://stackoverflow.com/questions/30306099/pip-install-editable-vs-python-setup-py-develop
-```
+> still in development 

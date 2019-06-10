@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name = 'cliapp',
+    name = 'pypapers',
     version = '0.1.0',
     packages = find_packages(),
     include_package_data=True,
@@ -10,7 +10,7 @@ setup(
     ],
     entry_points='''
         [console_scripts]
-        cliapp = cliapp.cli:main_cli
-        quicktest_cliapp = cliapp.tests.quicktest:quicktest_cli
+        pypapers = pypapers.cli:main_cli
+        quicktest_pypapers = pypapers.tests.quicktest:quicktest_cli
     ''',
 )

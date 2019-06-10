@@ -58,3 +58,5 @@ def read_config_folder():
         click.secho("ERROR: Config file is not formatted correctly" , fg="red")
         raise
     return section  # access via section['location'] ..etc..
+
+

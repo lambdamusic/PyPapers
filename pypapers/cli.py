@@ -51,8 +51,11 @@ def main_cli(ctx, args=None, init=False, fulltext=False):
         data = s.search_by_name(query)
     
     if data:
-        for x in data:
-            print(x)
+        r = Renderer(data, LOCAL_PAPERS_DIR)
+        r.select_item()
+
+        # for x in data:
+        #     print(x)
     else:
         click.secho("No results.")
 

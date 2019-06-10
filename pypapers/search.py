@@ -3,11 +3,9 @@
 
 import mdfind
 
-LOCAL_PAPERS_DIR = "/Users/michele.pasin/Desktop/paperstest"
-
 
 class Searcher():
-    def __init__(self, folder=LOCAL_PAPERS_DIR):
+    def __init__(self, folder):
         self.dir = folder
         # check that folder exists otherwise raise 
 
@@ -22,3 +20,18 @@ class Searcher():
             return results.split("\n")
         else:
             return []
+
+
+
+
+class Renderer():
+    def __init__(self, documents_list):
+        self.docs = documents_list
+
+    def open(self, n=None):
+        fpath = "" #@TODO
+        subprocess.Popen(['open', fpath])
+
+
+
+

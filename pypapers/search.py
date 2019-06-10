@@ -31,16 +31,8 @@ class Renderer():
     def open(self, fpath):
         subprocess.Popen(['open', fpath])
 
-    def select_item(self):
-        x = self.show_list()
-        if x == "all":
-            for d in self.docs:
-                self.open(d)
-        elif isinstance(x, int):
-            self.open(self.docs[x-1]) 
-        return
 
-    def show_list(self):
+    def show_list_and_select(self):
         counter = 1
         click.secho("--------------")
         for el in self.docs:
@@ -50,25 +42,18 @@ class Renderer():
             counter += 1
         click.secho("--------------")
         click.secho("Please select one option by entering its number, or 'a' to open all (enter=exit): ")
-        var = input()
-        if var == "":
-            return None
-        elif var == 'a':
-            return "all"
-        elif var.isdigit():
-            var = int(var)
-            if var <= len(self.docs):
-                return var
-            else:
-                print("Selection not valid")
-                return None                
-
-        # elif var.isdigit():
-        #     try:
-        #         var = int(var)
-        #         return self.docs[var-1]
-        #     except:
-        #         print("Selection not valid")
-        #         return None
-        else:
-            return None
+        while True:
+            var = input("> ")
+            if var == "":
+                click.secho("Goodbye")
+                break
+            elif var == 'a':
+                for d in self.docs:
+                    self.open(d)
+            elif var.isdigit():
+                var = int(var)
+                if var <= len(self.docs):
+                    self.open(self.docs[var-1])
+                else:
+                    print("Selection not valid")
+ 

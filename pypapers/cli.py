@@ -52,7 +52,7 @@ def main_cli(ctx, args=None, init=False, fulltext=False):
     
     if data:
         r = Renderer(data, LOCAL_PAPERS_DIR)
-        r.select_item()
+        r.show_list_and_select()
 
         # for x in data:
         #     print(x)

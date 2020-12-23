@@ -23,6 +23,8 @@ See also this [blog post](http://www.michelepasin.org/blog/2019/06/30/pypapers-a
 
 ## Install
 
+From [pypi](https://pypi.org/project/pypapers/):
+
 ```
 pip install pypapers
 ```
